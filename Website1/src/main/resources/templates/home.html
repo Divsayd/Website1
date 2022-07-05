@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width;initial-scale=1">
+    <link rel="shortcut icon" href="hello.ico">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title><b>Welcome to  INIYA Summer Camp</b></title>
+</head>
+
+<body>
+<header>
+
+    <img src="asset/images/header-banner.png" width="1400" height="72" alt="Banner">
+    <h1> <centre> <b> Welcome to Summer Camp </b></centre> </h1>
+</header>
+
+
+<ul>
+    <li><a >Home</a></li>
+    <li><a >Registration</a></li>
+
+
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programs</a>
+        <div class="dropdown-content">
+            <a href="#">Music</a>
+            <a th:href="@{/Swimming}">Swimming</a>
+            <a href="#">Sports</a>
+            <a th:href="@{/Art}">Art</a>
+            <a href="#">Games</a>
+        </div>
+    </li>
+    <li> <a th:href="@{/contact}"> Contact </a></li>
+</ul>
+
+</body>
+
+</body>
+</html>
